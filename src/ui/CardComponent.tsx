@@ -10,7 +10,6 @@ import Logo from "../../public/assets/Logo.png";
 
 import { MdOutlineFileUpload } from "react-icons/md";
 import { BiBarChart } from "react-icons/bi";
-import page from "@/app/(home)/page";
 
 interface Card {
   imageUrl: StaticImageData;
