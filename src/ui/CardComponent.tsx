@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 "use client";
 
 import { useEffect, useState } from "react";
@@ -66,7 +67,7 @@ const CardComponent: React.FC<CardComponentProps> = ({
   }, []);
 
   // Throttle Function
-  const throttle = (cb, d: number) => {
+  const throttle = (cb: (...args: any[]) => void, d: number) => {
     let last = 0;
     return (...args: any[]) => {
       const now = new Date().getTime();
